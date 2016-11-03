@@ -1,0 +1,10 @@
+.hide{
+			display:none;
+		}
+		.show{
+			display:block;
+		}
+		.modpwd-container{
+			min-height:500px;
+			margin-top:100px;
+		}

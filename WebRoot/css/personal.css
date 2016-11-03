@@ -1,0 +1,30 @@
+.nav-left{
+            background-color:GhostWhite;
+            padding-left:0;
+            padding-right:0;
+        }
+        .user-title{
+            font-size:15px;
+            margin-top:2px;
+            margin-bottom:2px;
+            padding:5px;
+        }
+        .active{
+            margin-top:0;
+            margin-bottom:0;
+            border:2px solid gainsboro;
+            background-color: rgba(96,96,96,0.6);
+        }
+        .user-title:hover{
+            background-color: rgba(96,96,96,0.6);
+        }
+        .user .pull-left{
+        	margin-top:10px;
+        	font-size:20px;
+        	font-weight:bold;
+        }
+        .content-container{
+        	margin-top:70px;
+        	margin-bottom:20px;
+        	min-height:560px;
+        }

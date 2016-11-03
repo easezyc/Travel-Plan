@@ -1,0 +1,62 @@
+.picno{
+    display:none;
+}
+.picno .col-sm-4{
+    margin-top:20px;
+}
+.picshow img{
+    height:100%;
+    width:100%;
+}
+.picshow .img-container{
+    height:200px;
+    width:200px;
+    position:relative;
+}
+#carousel-home, img  {
+    width: 100%;
+}
+.picshow{
+    position: absolute;
+    top:30%;
+    width:80%;
+    left:10%;
+}
+.img-cover{
+    height:100%;
+    width:100%;
+    background-color:rgba(255,255,255,0);
+    bottom:0;
+    position:absolute;
+    cursor: pointer;
+}
+.text-cover{
+    position:absolute;
+    bottom:0;
+    color:white;
+    padding:5px;
+    margin:5px;
+    text-decoration: none;
+}
+.text-cover .title{
+    font-size:20px;
+    padding:5px;
+}
+.text-cover .introduction{
+    display:none;
+    padding:5px;
+}
+@media screen and (max-width : 768px) {
+    .picshow {
+        display: none;
+    }
+    .picno{
+        display:block;
+    }
+}
+@media screen and (max-width : 992px) {
+    .picshow .img-container{
+        height:160px;
+        width:160px;
+    }
+}

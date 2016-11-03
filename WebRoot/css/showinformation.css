@@ -1,0 +1,9 @@
+		.show{
+            display:block;
+        }
+        .hide{
+            display:none;
+        }  
+        .user_information{
+        	margin-left:20px;
+        }

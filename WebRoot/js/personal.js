@@ -1,0 +1,11 @@
+$(document).ready(function(){
+            $("#information").click(function(){
+        		window.location="/zyc/user/showinformation.jsp";
+        	});
+        	$("#plan").click(function(){
+        		window.location="/zyc/user/userplan.jsp";
+        	});
+        	$("#share").click(function(){
+        		window.location="/zyc/user/usershare.jsp";
+        	});
+    	});

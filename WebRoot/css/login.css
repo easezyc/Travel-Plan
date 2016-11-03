@@ -1,0 +1,33 @@
+		#background{
+            height:100%;
+            width:100%;
+            z-index:-10;
+
+        }
+        .background-container{
+            position:relative;
+            margin-top:30px;
+        }
+        .login-container{
+            position:absolute;
+            width:80%;
+            left:10%;
+            top:25%;
+        }
+        .login-windows{
+            border-radius: 15px;
+            background-color:rgba(255,255,255,0.6);
+            padding:10px;
+        }
+        @media screen and (max-width : 768px) {
+        	.login-container{
+        		position:relative;
+        		margin-top:20px;
+        		margin-bottom:20px;
+        		width:100%;
+        		left:0;
+        	}
+   			.login-windows{
+   			background-color:rgba(200,200,200,0.6);
+   			}
+		}

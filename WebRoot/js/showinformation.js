@@ -1,0 +1,90 @@
+$(document).ready(function(){
+	$(".mod-information").click(function(){
+    	$(".user-show").removeClass("show");
+    	$(".user-show").addClass("hide");
+    	$(".user-phone").removeClass("hide");
+    	$(".user-phone").addClass("show");
+    	$("#btn-pwd").addClass("hide");
+    	$("#btn-img").addClass("hide");
+    });
+    $(".mod-pwd").click(function(){
+    	$(".user-show").removeClass("show");
+    	$(".user-show").addClass("hide");
+    	$(".user-phone").removeClass("hide");
+    	$(".user-phone").addClass("show");
+    	$("#btn-other").addClass("hide");
+    	$("#btn-img").addClass("hide");
+    });
+    $(".mod-image").click(function(){
+    	$(".user-show").removeClass("show");
+    	$(".user-show").addClass("hide");
+    	$(".user-phone").removeClass("hide");
+    	$(".user-phone").addClass("show");
+    	$("#btn-other").addClass("hide");
+    	$("#btn-pwd").addClass("hide");
+    });
+    $("#pwd-ok").click(function(){
+    	var warning=1;
+    	if($("#pwd").val().length<8){
+    		$("#pwd-warning").text("密码过短");
+    		warning=0;
+    	}
+    	if($("#pwd").val()!=$("#pwdcheck").val()){
+    		$("#pwdcheck-warning").text("两次密码不同");
+    		warning=0;
+    	}
+    	if(warning==1){
+    		$.ajax({
+    			url:"/zyc/servlet/UserModServlet",
+    			data:{op:"pwd",pwd:$("#pwd").val()},
+    			type:"GET",
+    			dataType:"json",
+    			success:function(data){
+        			alert(data.backnews);
+        			$("#pwd-warning").text("");
+        			$("#pwdcheck-warning").text("");
+        			$(".user-pwd").removeClass("show");
+        			$(".user-pwd").addClass("hide");
+        			$(".user-show").addClass("show");
+    			},
+    			error:function(){
+        			alert("请求失败");
+        			$("#pwd-warning").text("");
+        			$("#pwdcheck-warning").text("");
+    			}
+			});
+    	}
+    });
+    $("#information-ok").click(function(){
+    	if($("#newphone").val().length!=11&&$("#newphone").val()!=""){alert("手机号格式不对");}
+    	else{$.ajax({
+    			url:"/zyc/servlet/UserModServlet",
+    			data:{op:"information",phone:$("#newphone").val(),name:$("#newname").val()},
+    			type:"GET",
+    			dataType:"json",
+    			success:function(data){
+        			alert(data.backnews);
+        			if(data.backnews=="修改成功"){
+        				window.location="/zyc/user/showinformation.jsp";
+        			}
+    			},
+    			error:function(){
+        			alert("请求失败");
+    			}
+			});
+		}
+    });
+    $("#img-ok").click(function(){
+    var imgPath = $("#file").val();
+    	if (imgPath == "") {
+        alert("请选择上传图片！");
+        return false;
+    }
+    //判断上传文件的后缀名
+    var strExtension = imgPath.substr(imgPath.lastIndexOf('.') + 1);
+    if (strExtension != 'jpg') {
+        alert("请选择jpg图片文件");
+        return false;
+    };
+    });
+});

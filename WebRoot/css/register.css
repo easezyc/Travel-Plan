@@ -1,0 +1,45 @@
+		#background{
+            height:100%;
+            width:100%;
+            z-index:-10;
+
+        }
+        .smallwarning{
+        	display:none;
+        }
+        .smallwarning,.bigwarning{
+        	color:red;
+        }
+        .background-container{
+            position:relative;
+            margin-top:30px;
+        }
+        .register-container{
+            position:absolute;
+            width:80%;
+            left:10%;
+            top:20%;
+        }
+        .register-windows{
+            border-radius: 15px;
+            background-color:rgba(255,255,255,0.6);
+            padding:10px;
+        }
+        @media screen and (max-width : 768px) {
+            .register-container{
+                position:relative;
+                width:100%;
+                left:0;
+                margin-top:20px;
+                margin-bottom:20px;
+            }
+            .smallwarning{
+                display:block;
+            }
+            .bigwarning{
+            	display:none;
+            }
+            .register-windows{
+                background-color:rgba(200,200,200,0.6);
+            }
+        }

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>LoginServlet</description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.zyc.control.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>UserServlet</description>
+    <display-name>UserServlet</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.zyc.control.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>UserJudgeServlet</description>
+    <display-name>UserJudgeServlet</display-name>
+    <servlet-name>UserJudgeServlet</servlet-name>
+    <servlet-class>com.zyc.control.UserJudgeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>UserLoginServlet</description>
+    <display-name>UserLoginServlet</display-name>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <servlet-class>com.zyc.control.UserLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>UserRegisterServlet</description>
+    <display-name>UserRegisterServlet</display-name>
+    <servlet-name>UserRegisterServlet</servlet-name>
+    <servlet-class>com.zyc.control.UserRegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>UserExit</description>
+    <display-name>UserExit</display-name>
+    <servlet-name>UserExit</servlet-name>
+    <servlet-class>com.zyc.control.UserExit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>UserExitServlet</description>
+    <display-name>UserExitServlet</display-name>
+    <servlet-name>UserExitServlet</servlet-name>
+    <servlet-class>com.zyc.control.UserExitServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>UserModServlet</description>
+    <display-name>UserModServlet</display-name>
+    <servlet-name>UserModServlet</servlet-name>
+    <servlet-class>com.zyc.control.UserModServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>AdminLoginServlet</description>
+    <display-name>AdminLoginServlet</display-name>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>com.zyc.control.AdminLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>AdminRegisterServlet</description>
+    <display-name>AdminRegisterServlet</display-name>
+    <servlet-name>AdminRegisterServlet</servlet-name>
+    <servlet-class>com.zyc.control.AdminRegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>DeleteUserServlet</description>
+    <display-name>DeleteUserServlet</display-name>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <servlet-class>com.zyc.control.DeleteUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>DeleteAdminServlet</description>
+    <display-name>DeleteAdminServlet</display-name>
+    <servlet-name>DeleteAdminServlet</servlet-name>
+    <servlet-class>com.zyc.control.DeleteAdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>ChangeAdminServlet</description>
+    <display-name>ChangeAdminServlet</display-name>
+    <servlet-name>ChangeAdminServlet</servlet-name>
+    <servlet-class>com.zyc.control.ChangeAdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>ChangePwdServlet</description>
+    <display-name>ChangePwdServlet</display-name>
+    <servlet-name>ChangePwdServlet</servlet-name>
+    <servlet-class>com.zyc.control.ChangePwdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>UserCreateFootServlet</description>
+    <display-name>UserCreateFootServlet</display-name>
+    <servlet-name>UserCreateFootServlet</servlet-name>
+    <servlet-class>com.zyc.control.UserCreateFootServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>FileServlet</description>
+    <display-name>FileServlet</display-name>
+    <servlet-name>FileServlet</servlet-name>
+    <servlet-class>com.zyc.control.FileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>ShowArticleListServlet</description>
+    <display-name>ShowArticleListServlet</display-name>
+    <servlet-name>ShowArticleListServlet</servlet-name>
+    <servlet-class>com.zyc.control.ShowArticleListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>AddImageServlet</description>
+    <display-name>AddImageServlet</display-name>
+    <servlet-name>AddImageServlet</servlet-name>
+    <servlet-class>com.zyc.control.AddImageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>ShowArticleServlet</description>
+    <display-name>ShowArticleServlet</display-name>
+    <servlet-name>ShowArticleServlet</servlet-name>
+    <servlet-class>com.zyc.control.ShowArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>ShowArticleImgServlet</description>
+    <display-name>ShowArticleImgServlet</display-name>
+    <servlet-name>ShowArticleImgServlet</servlet-name>
+    <servlet-class>com.zyc.control.ShowArticleImgServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>SearchArticleServlet</description>
+    <display-name>SearchArticleServlet</display-name>
+    <servlet-name>SearchArticleServlet</servlet-name>
+    <servlet-class>com.zyc.control.SearchArticleServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/servlet/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserJudgeServlet</servlet-name>
+    <url-pattern>/servlet/UserJudgeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <url-pattern>/servlet/UserLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserRegisterServlet</servlet-name>
+    <url-pattern>/servlet/UserRegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserExit</servlet-name>
+    <url-pattern>/servlet/UserExit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserExitServlet</servlet-name>
+    <url-pattern>/servlet/UserExitServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserModServlet</servlet-name>
+    <url-pattern>/servlet/UserModServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/servlet/AdminLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminRegisterServlet</servlet-name>
+    <url-pattern>/servlet/AdminRegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <url-pattern>/servlet/DeleteUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteAdminServlet</servlet-name>
+    <url-pattern>/servlet/DeleteAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeAdminServlet</servlet-name>
+    <url-pattern>/servlet/ChangeAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePwdServlet</servlet-name>
+    <url-pattern>/servlet/ChangePwdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserCreateFootServlet</servlet-name>
+    <url-pattern>/servlet/UserCreateFootServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileServlet</servlet-name>
+    <url-pattern>/servlet/FileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowArticleListServlet</servlet-name>
+    <url-pattern>/servlet/ShowArticleListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddImageServlet</servlet-name>
+    <url-pattern>/servlet/AddImageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowArticleServlet</servlet-name>
+    <url-pattern>/servlet/ShowArticleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowArticleImgServlet</servlet-name>
+    <url-pattern>/servlet/ShowArticleImgServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchArticleServlet</servlet-name>
+    <url-pattern>/servlet/SearchArticleServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
